@@ -27,6 +27,17 @@
             height: 600px;
             border: none;
         }
+
+        #writing-menu {
+        max-height: 50vh;
+        overflow-y: auto;
+        padding-right: 10px;
+        border-left: 2px solid #ccc;
+        margin-left: 10px;
+        padding-left: 10px;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -84,8 +95,11 @@
             </div>
         </div>
 
+
+      
         <div class="project-category" onclick="toggleMenu('writing')">
-            <h3>Writing Reports</h3>
+            <div class="sub-category" onclick="toggleMenu('writing-menu')">
+                <h3>Writing Reports</h3>
             <span>+</span>
         </div>
         <div class="project-menu" id="writing">
