@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project-category" onclick="toggleMenu('programming')">
+            <h3>Programming</h3>
+            <span>+</span>
+        </div>
+        <div class="project-menu" id="programming">
+            <p>Projects related to coding, algorithms, and AI.</p>
+        </div>
+
+        <div class="project-category" onclick="toggleMenu('workshop')">
+            <h3>Workshop</h3>
+            <span>+</span>
+        </div>
+        <div class="project-menu" id="workshop">
+            <p>Hands-on mechanical and electronic projects.</p>
+        </div>
+
+        <div class="project-category" onclick="toggleMenu('modelling')">
+            <h3>Modelling</h3>
+            <span>+</span>
+        </div>
+        <div class="project-menu" id="modelling">
+            <p>3D design, CAD models, and simulations.</p>
+        </div>
+    </section>
+</body>
+</html>
