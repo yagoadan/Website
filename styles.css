@@ -3,8 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Header */
@@ -13,11 +16,14 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
+    width: 100%;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -34,18 +40,21 @@ nav ul li a {
 /* Sections */
 section {
     padding: 40px;
-    max-width: 800px;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     margin-bottom: 20px;
+    color: black;
 }
 
 h2 {
     color: #1e1e1e;
     border-bottom: 2px solid #1e1e1e;
     padding-bottom: 5px;
+    text-align: left;
 }
 
 /* Contact Form */
@@ -88,24 +97,16 @@ footer {
     padding: 20px;
     background: #1e1e1e;
     color: white;
-    position: relative;
-}
-
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1e1e1e;
-    color: white;
+    width: 100%;
 }
 
 /* Projects Section */
 #projects {
-    max-width: 1000px;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
     padding: 20px;
+    text-align: center;
 }
 
 .project-category {
@@ -117,6 +118,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 18px;
 }
 
 .project-category h3, .project-category h4 {
@@ -126,8 +128,14 @@ body {
 
 .project-menu {
     display: none;
-    padding-left: 20px;
+    padding: 15px;
     margin-bottom: 10px;
+    background: #444;
+    border-radius: 5px;
+}
+
+.project-menu p {
+    margin: 0;
 }
 
 .project-card {
