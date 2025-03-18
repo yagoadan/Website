@@ -21,6 +21,12 @@
             overflow-y: auto;
             padding-right: 10px;
         }
+        /* Styling for PDF viewer */
+        .pdf-viewer {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -67,7 +73,7 @@
                 <img src="Files/images/simulation.png" alt="Simulation" style="width:100%; max-width:500px; display:block; margin:auto;">
                 <p><strong>Two-Wheel Self-Balancing Robot</strong></p>
                 <p>This project focuses on designing a self-balancing robot capable of maintaining its stability while carrying and transporting objects. The robot uses a PID controller for stability and is controlled via a microcontroller, integrating sensors and actuators for real-time adjustments. The project was developed in Siemens NX for simulation and LabVIEW for control testing.</p>
-                <iframe src="Files/Reports/Yago-Self-Balance.pdf" width="100%" height="500px" style="border:none;"></iframe>
+                <iframe src="Files/Reports/Yago-Self-Balance.pdf" class="pdf-viewer"></iframe>
             </div>
 
             <div class="sub-category" onclick="toggleMenu('fluidsim')">
@@ -83,7 +89,13 @@
             <span>+</span>
         </div>
         <div class="project-menu" id="writing">
-            <p>Writing reports across my studies adn researches.</p>
+            <div class="sub-category" onclick="toggleMenu('cv-vi')">
+                <h4>Computer Vision for Visually Impaired Children</h4>
+            </div>
+            <div class="project-menu" id="cv-vi">
+                <p>This project focuses on enhancing accessibility for visually impaired children by leveraging **computer vision and machine learning**. It aims to improve the playability of the classic game **UNO** by enabling real-time card recognition using **OpenCV and deep learning models**. Through **audio feedback and gesture-based interactions**, the system ensures blind children can participate in card games independently, fostering inclusivity and cognitive development.</p>
+                <iframe src="Files/Reports/Final_report.pdf" class="pdf-viewer"></iframe>
+            </div>
         </div>
 
         <div class="project-category" onclick="toggleMenu('workshop')">
