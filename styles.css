@@ -171,3 +171,11 @@ footer {
   cursor: pointer;
   border-radius: 5px;
 }
+
+
+/* Add scrollbar for the Writing Reports submenu */
+#writing {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
