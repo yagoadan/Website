@@ -90,3 +90,58 @@ footer {
     color: white;
     position: relative;
 }
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Projects Section */
+#projects {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.project-category {
+    background: #333;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-category h3, .project-category h4 {
+    margin: 0;
+    color: white;
+}
+
+.project-menu {
+    display: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card {
+    background: #444;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+}
+
+.sub-category {
+    background: #444;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
