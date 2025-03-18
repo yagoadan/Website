@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <style>
+        body {
+            overflow-y: auto;
+        }
+        #projects {
+            max-height: 80vh;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        /* Add scrollbar for the Programming submenu */
+        #programming {
+            max-height: 50vh;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+    </style>
 </head>
-
 <body>
     <header>
         <h1>My Projects</h1>
@@ -20,16 +34,43 @@
             </ul>
         </nav>
     </header>
-
+    
     <section id="projects">
         <h2>Projects</h2>
-
+        
         <div class="project-category" onclick="toggleMenu('programming')">
             <h3>Programming</h3>
             <span>+</span>
         </div>
         <div class="project-menu" id="programming">
-            <p>Projects related to coding, algorithms, and AI.</p>
+            
+            <div class="sub-category" onclick="toggleMenu('python')">
+                <h4>Python</h4>
+            </div>
+            <div class="project-menu" id="python">
+                <p>Projects related to Python programming and AI.</p>
+            </div>
+
+            <div class="sub-category" onclick="toggleMenu('ros')">
+                <h4>ROS</h4>
+            </div>
+            <div class="project-menu" id="ros">
+                <p>Robotic Operating System (ROS) projects.</p>
+            </div>
+
+            <div class="sub-category" onclick="toggleMenu('siemens-nx')">
+                <h4>Siemens NX</h4>
+            </div>
+            <div class="project-menu" id="siemens-nx">
+                <p>Projects related to CAD modeling and engineering using Siemens NX.</p>
+            </div>
+
+            <div class="sub-category" onclick="toggleMenu('fluidsim')">
+                <h4>FluidSim</h4>
+            </div>
+            <div class="project-menu" id="fluidsim">
+                <p>Hydraulic and pneumatic simulation projects using FluidSim.</p>
+            </div>
         </div>
 
         <div class="project-category" onclick="toggleMenu('workshop')">
@@ -49,5 +90,4 @@
         </div>
     </section>
 </body>
-
 </html>
